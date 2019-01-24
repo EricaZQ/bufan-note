@@ -8,17 +8,19 @@
 		// 翻译过来：它的因数个数是2。
 		// 比如：2、3、5、7、11、13、17、19、23、29、31、37……
 		var num = prompt('请输入一个整数')
-		var sum = 0;
-		for(var i = 1; i <= num ; i++){ 
-           if(num%i == 0 ){
-          		sum++;
-			}	
-		}
-		if(sum > 2){
-			alert('这个数不是质数');
-		}else{
-			alert('这个数是质数');
-		}
+		function zhi(num){
+			var sum = 0;
+			for(var i = 1; i <= num ; i++){ 
+	           if(num%i == 0 ){
+	          		sum++;
+				}	
+			}
+			if(sum > 2){
+				alert('这个数不是质数');
+			}else{
+				alert('这个数是质数');
+			}}
+		zhi(num);
 		
 		
 

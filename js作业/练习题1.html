@@ -9,6 +9,7 @@
 			// 	alert('这个数字可以同时被5和6整除');
 			// }
 		var num = prompt('请输入一个数字：');
+		function tc(num){
 		if (num%5 == 0 && num%6 == 0) {
 			alert('这个数字可以同时被5和6整除。');
 		}else if(num%5 == 0){
@@ -17,7 +18,8 @@
 			alert('这个数字可以被6整除,但是不能被5整除。');
 		}else {
 			alert('这个数字不可以被6整除,也不能被5整除。');
-		}
+		}}
+		tc(num);
 
 
 	</script>

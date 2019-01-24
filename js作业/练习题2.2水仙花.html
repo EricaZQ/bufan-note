@@ -12,20 +12,22 @@
 		// 100~999之内，只有4个水仙花数，请找出来。
 
 		// 特别经典的算法，是每个学习编程的人，都要会做。
-		var a,b,c ;
-		for(i=100;i<999;i++){
-			var a = parseInt(i%10); //个位数
-			var b = parseInt((i/10)%10); //十位数
-			var c = parseInt(i/100); //百位数
-			if(a*a*a+b*b*b+c*c*c== i)
-		{
-		document.write(i +"是水仙花数"+"<br/>");
-		document.write(a +"<br/>");
-		document.write(b +"<br/>"); 
-		document.write(c +"<br/>");
+		function hua(){
+			var a,b,c ;
+			for(i=100;i<999;i++){
+				var a = parseInt(i%10); //个位数
+				var b = parseInt((i/10)%10); //十位数
+				var c = parseInt(i/100); //百位数
+				if(a*a*a+b*b*b+c*c*c== i)
+			{
+			document.write(i +"是水仙花数"+"<br/>");
+			document.write(a +"<br/>");
+			document.write(b +"<br/>"); 
+			document.write(c +"<br/>");
 
-		}
-		}
+			}
+			}}
+		hua();
 
 	</script>
 </head>

@@ -12,14 +12,16 @@
 			// 51，5
 			// 101，2，5，10
 		var num = prompt('请输入一个整数')
-		var sum = 0;
-		for(var i = 1; i <= num ; i++){ 
-           if(num%i== 0 ){
-          		console.log(i);
-          		sum++;
-			}	
-		}
-		console.log('一共有'+sum+'个因数');
+		function yin(num){
+			var sum = 0;
+			for(var i = 1; i <= num ; i++){ 
+	           if(num%i== 0 ){
+	          		console.log(i);
+	          		sum++;
+				}	
+			}
+			console.log('一共有'+sum+'个因数');}
+		yin(num);
 
 	</script>
 </head>
