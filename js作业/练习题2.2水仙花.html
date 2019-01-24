@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>水仙花数</title>
+	<script type="text/javascript">
+		// 		水仙花数是一种特殊的三位数，它的特点就是，每个数位的立方和，等于它本身。
+
+		// 比如153就是水仙花数。因为：
+		// 13+53+33 = 153
+
+		// 100~999之内，只有4个水仙花数，请找出来。
+
+		// 特别经典的算法，是每个学习编程的人，都要会做。
+		var a,b,c ;
+		for(i=100;i<999;i++){
+			var a = parseInt(i%10); //个位数
+			var b = parseInt((i/10)%10); //十位数
+			var c = parseInt(i/100); //百位数
+			if(a*a*a+b*b*b+c*c*c== i)
+		{
+		document.write(i +"是水仙花数"+"<br/>");
+		document.write(a +"<br/>");
+		document.write(b +"<br/>"); 
+		document.write(c +"<br/>");
+
+		}
+		}
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
